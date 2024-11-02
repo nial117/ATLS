@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replay</title>
+    <style>
+        /* Import custom font directly from the main directory */
+        @font-face {
+            font-family: 'atlas_lisa';
+            src: url('atlas_lisa.ttf') format('truetype');
+        }
+
+        /* Body styling */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: red;
+            font-family: 'atlas_lisa', sans-serif;
+            text-align: center;
+            margin: 0;
+        }
+
+        /* Title styling */
+        h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        /* Video player styling */
+        #y2k {
+            width: 80%;
+            max-width: 800px;
+            border: 2px solid red;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Title -->
+    <h1>Replay</h1>
+
+    <!-- Video Player -->
+    <video id="y2k" controls>
+        <source src="y2k.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
+
+
