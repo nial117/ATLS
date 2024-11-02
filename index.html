@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replay</title>
+    <style>
+        /* Import the custom font (assuming the font file is in assets/fonts) */
+        @font-face {
+            font-family: 'atlas_lisa';
+            src: url('assets/fonts/atlas_lisa.ttf') format('truetype');
+        }
+
+        /* Reset styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            font-family: 'atlas_lisa', sans-serif;
+            text-align: center;
+            color: red;
+            overflow: hidden;
+        }
+
+        /* Title styling */
+        h1 {
+            font-size: 4rem;
+            text-transform: uppercase;  /* Force uppercase text */
+            color: red;
+            margin-bottom: 20px;
+        }
+
+        /* Video player styling */
+        #your-video {
+            width: 80%;
+            max-width: 800px;
+            border: 2px solid red;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Title -->
+    <h1>REPLAY</h1>
+
+    <!-- Video player -->
+    <video id="your-video" controls>
+        <source src="assets/videos/your-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
+
